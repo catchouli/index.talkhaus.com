@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- title information -->
+        <title>sites.talkhaus.com index</title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="/assets/css/style.css?vers=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+        <!-- metadata -->
+        <meta charset="utf-8">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        {% include header.html %}
+
+        <div id="content" class="panel">
+          <h2>{{ page.title }}</h2>
+          {{ content }}
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

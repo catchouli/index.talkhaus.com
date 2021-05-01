@@ -1,0 +1,17 @@
+---
+---
+
+<div class="site-list">
+  {% assign sorted = site.sites %}
+  {% for site in sorted %}
+    <span class="site-panel">
+      <a href="https://{{ site.site_url }}">
+        <img src="/{{ site.screenshot }}">
+        <p>{{ site.site_url }}</p>
+      </a>
+      {% if site.title %}
+        {{ site.title | truncate: 100 }}
+      {% endif %}
+    </span>
+  {% endfor %}
+</div>

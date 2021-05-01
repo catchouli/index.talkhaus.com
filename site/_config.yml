@@ -1,0 +1,8 @@
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+
+collections:
+  - sites
